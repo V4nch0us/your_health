@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'core/ui/app_theme.dart';
 import 'features/dynamics/presentation/pages/dynamics_page.dart';
 
 class YourHealthApp extends StatelessWidget {
@@ -7,9 +8,10 @@ class YourHealthApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DynamicsPage(),
+      theme: theme,
+      home: const DynamicsPage(),
     );
   }
 }

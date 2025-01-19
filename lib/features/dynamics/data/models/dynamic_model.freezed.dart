@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'dynamics_response.dart';
+part of 'dynamic_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,45 +14,47 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-DynamicsResponse _$DynamicsResponseFromJson(Map<String, dynamic> json) {
-  return _DynamicsResponse.fromJson(json);
+DynamicsResponseModel _$DynamicsResponseModelFromJson(
+    Map<String, dynamic> json) {
+  return _DynamicsResponseModel.fromJson(json);
 }
 
 /// @nodoc
-mixin _$DynamicsResponse {
-  List<Alert> get alerts => throw _privateConstructorUsedError;
-  List<Dynamics> get dynamics => throw _privateConstructorUsedError;
+mixin _$DynamicsResponseModel {
+  List<AlertModel> get alerts => throw _privateConstructorUsedError;
+  List<DynamicModel> get dynamics => throw _privateConstructorUsedError;
 
-  /// Serializes this DynamicsResponse to a JSON map.
+  /// Serializes this DynamicsResponseModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of DynamicsResponse
+  /// Create a copy of DynamicsResponseModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $DynamicsResponseCopyWith<DynamicsResponse> get copyWith =>
+  $DynamicsResponseModelCopyWith<DynamicsResponseModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DynamicsResponseCopyWith<$Res> {
-  factory $DynamicsResponseCopyWith(
-          DynamicsResponse value, $Res Function(DynamicsResponse) then) =
-      _$DynamicsResponseCopyWithImpl<$Res, DynamicsResponse>;
+abstract class $DynamicsResponseModelCopyWith<$Res> {
+  factory $DynamicsResponseModelCopyWith(DynamicsResponseModel value,
+          $Res Function(DynamicsResponseModel) then) =
+      _$DynamicsResponseModelCopyWithImpl<$Res, DynamicsResponseModel>;
   @useResult
-  $Res call({List<Alert> alerts, List<Dynamics> dynamics});
+  $Res call({List<AlertModel> alerts, List<DynamicModel> dynamics});
 }
 
 /// @nodoc
-class _$DynamicsResponseCopyWithImpl<$Res, $Val extends DynamicsResponse>
-    implements $DynamicsResponseCopyWith<$Res> {
-  _$DynamicsResponseCopyWithImpl(this._value, this._then);
+class _$DynamicsResponseModelCopyWithImpl<$Res,
+        $Val extends DynamicsResponseModel>
+    implements $DynamicsResponseModelCopyWith<$Res> {
+  _$DynamicsResponseModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of DynamicsResponse
+  /// Create a copy of DynamicsResponseModel
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -64,35 +66,37 @@ class _$DynamicsResponseCopyWithImpl<$Res, $Val extends DynamicsResponse>
       alerts: null == alerts
           ? _value.alerts
           : alerts // ignore: cast_nullable_to_non_nullable
-              as List<Alert>,
+              as List<AlertModel>,
       dynamics: null == dynamics
           ? _value.dynamics
           : dynamics // ignore: cast_nullable_to_non_nullable
-              as List<Dynamics>,
+              as List<DynamicModel>,
     ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$DynamicsResponseImplCopyWith<$Res>
-    implements $DynamicsResponseCopyWith<$Res> {
-  factory _$$DynamicsResponseImplCopyWith(_$DynamicsResponseImpl value,
-          $Res Function(_$DynamicsResponseImpl) then) =
-      __$$DynamicsResponseImplCopyWithImpl<$Res>;
+abstract class _$$DynamicsResponseModelImplCopyWith<$Res>
+    implements $DynamicsResponseModelCopyWith<$Res> {
+  factory _$$DynamicsResponseModelImplCopyWith(
+          _$DynamicsResponseModelImpl value,
+          $Res Function(_$DynamicsResponseModelImpl) then) =
+      __$$DynamicsResponseModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({List<Alert> alerts, List<Dynamics> dynamics});
+  $Res call({List<AlertModel> alerts, List<DynamicModel> dynamics});
 }
 
 /// @nodoc
-class __$$DynamicsResponseImplCopyWithImpl<$Res>
-    extends _$DynamicsResponseCopyWithImpl<$Res, _$DynamicsResponseImpl>
-    implements _$$DynamicsResponseImplCopyWith<$Res> {
-  __$$DynamicsResponseImplCopyWithImpl(_$DynamicsResponseImpl _value,
-      $Res Function(_$DynamicsResponseImpl) _then)
+class __$$DynamicsResponseModelImplCopyWithImpl<$Res>
+    extends _$DynamicsResponseModelCopyWithImpl<$Res,
+        _$DynamicsResponseModelImpl>
+    implements _$$DynamicsResponseModelImplCopyWith<$Res> {
+  __$$DynamicsResponseModelImplCopyWithImpl(_$DynamicsResponseModelImpl _value,
+      $Res Function(_$DynamicsResponseModelImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of DynamicsResponse
+  /// Create a copy of DynamicsResponseModel
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -100,42 +104,42 @@ class __$$DynamicsResponseImplCopyWithImpl<$Res>
     Object? alerts = null,
     Object? dynamics = null,
   }) {
-    return _then(_$DynamicsResponseImpl(
+    return _then(_$DynamicsResponseModelImpl(
       alerts: null == alerts
           ? _value._alerts
           : alerts // ignore: cast_nullable_to_non_nullable
-              as List<Alert>,
+              as List<AlertModel>,
       dynamics: null == dynamics
           ? _value._dynamics
           : dynamics // ignore: cast_nullable_to_non_nullable
-              as List<Dynamics>,
+              as List<DynamicModel>,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$DynamicsResponseImpl implements _DynamicsResponse {
-  const _$DynamicsResponseImpl(
-      {required final List<Alert> alerts,
-      required final List<Dynamics> dynamics})
+class _$DynamicsResponseModelImpl implements _DynamicsResponseModel {
+  const _$DynamicsResponseModelImpl(
+      {required final List<AlertModel> alerts,
+      required final List<DynamicModel> dynamics})
       : _alerts = alerts,
         _dynamics = dynamics;
 
-  factory _$DynamicsResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$DynamicsResponseImplFromJson(json);
+  factory _$DynamicsResponseModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DynamicsResponseModelImplFromJson(json);
 
-  final List<Alert> _alerts;
+  final List<AlertModel> _alerts;
   @override
-  List<Alert> get alerts {
+  List<AlertModel> get alerts {
     if (_alerts is EqualUnmodifiableListView) return _alerts;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_alerts);
   }
 
-  final List<Dynamics> _dynamics;
+  final List<DynamicModel> _dynamics;
   @override
-  List<Dynamics> get dynamics {
+  List<DynamicModel> get dynamics {
     if (_dynamics is EqualUnmodifiableListView) return _dynamics;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_dynamics);
@@ -143,14 +147,14 @@ class _$DynamicsResponseImpl implements _DynamicsResponse {
 
   @override
   String toString() {
-    return 'DynamicsResponse(alerts: $alerts, dynamics: $dynamics)';
+    return 'DynamicsResponseModel(alerts: $alerts, dynamics: $dynamics)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DynamicsResponseImpl &&
+            other is _$DynamicsResponseModelImpl &&
             const DeepCollectionEquality().equals(other._alerts, _alerts) &&
             const DeepCollectionEquality().equals(other._dynamics, _dynamics));
   }
@@ -162,81 +166,84 @@ class _$DynamicsResponseImpl implements _DynamicsResponse {
       const DeepCollectionEquality().hash(_alerts),
       const DeepCollectionEquality().hash(_dynamics));
 
-  /// Create a copy of DynamicsResponse
+  /// Create a copy of DynamicsResponseModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$DynamicsResponseImplCopyWith<_$DynamicsResponseImpl> get copyWith =>
-      __$$DynamicsResponseImplCopyWithImpl<_$DynamicsResponseImpl>(
-          this, _$identity);
+  _$$DynamicsResponseModelImplCopyWith<_$DynamicsResponseModelImpl>
+      get copyWith => __$$DynamicsResponseModelImplCopyWithImpl<
+          _$DynamicsResponseModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DynamicsResponseImplToJson(
+    return _$$DynamicsResponseModelImplToJson(
       this,
     );
   }
 }
 
-abstract class _DynamicsResponse implements DynamicsResponse {
-  const factory _DynamicsResponse(
-      {required final List<Alert> alerts,
-      required final List<Dynamics> dynamics}) = _$DynamicsResponseImpl;
+abstract class _DynamicsResponseModel implements DynamicsResponseModel {
+  const factory _DynamicsResponseModel(
+          {required final List<AlertModel> alerts,
+          required final List<DynamicModel> dynamics}) =
+      _$DynamicsResponseModelImpl;
 
-  factory _DynamicsResponse.fromJson(Map<String, dynamic> json) =
-      _$DynamicsResponseImpl.fromJson;
+  factory _DynamicsResponseModel.fromJson(Map<String, dynamic> json) =
+      _$DynamicsResponseModelImpl.fromJson;
 
   @override
-  List<Alert> get alerts;
+  List<AlertModel> get alerts;
   @override
-  List<Dynamics> get dynamics;
+  List<DynamicModel> get dynamics;
 
-  /// Create a copy of DynamicsResponse
+  /// Create a copy of DynamicsResponseModel
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$DynamicsResponseImplCopyWith<_$DynamicsResponseImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$DynamicsResponseModelImplCopyWith<_$DynamicsResponseModelImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
-Alert _$AlertFromJson(Map<String, dynamic> json) {
-  return _Alert.fromJson(json);
+AlertModel _$AlertModelFromJson(Map<String, dynamic> json) {
+  return _AlertModel.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Alert {
+mixin _$AlertModel {
   String get message => throw _privateConstructorUsedError;
   bool get resubmitLink => throw _privateConstructorUsedError;
 
-  /// Serializes this Alert to a JSON map.
+  /// Serializes this AlertModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of Alert
+  /// Create a copy of AlertModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $AlertCopyWith<Alert> get copyWith => throw _privateConstructorUsedError;
+  $AlertModelCopyWith<AlertModel> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $AlertCopyWith<$Res> {
-  factory $AlertCopyWith(Alert value, $Res Function(Alert) then) =
-      _$AlertCopyWithImpl<$Res, Alert>;
+abstract class $AlertModelCopyWith<$Res> {
+  factory $AlertModelCopyWith(
+          AlertModel value, $Res Function(AlertModel) then) =
+      _$AlertModelCopyWithImpl<$Res, AlertModel>;
   @useResult
   $Res call({String message, bool resubmitLink});
 }
 
 /// @nodoc
-class _$AlertCopyWithImpl<$Res, $Val extends Alert>
-    implements $AlertCopyWith<$Res> {
-  _$AlertCopyWithImpl(this._value, this._then);
+class _$AlertModelCopyWithImpl<$Res, $Val extends AlertModel>
+    implements $AlertModelCopyWith<$Res> {
+  _$AlertModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Alert
+  /// Create a copy of AlertModel
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -258,24 +265,25 @@ class _$AlertCopyWithImpl<$Res, $Val extends Alert>
 }
 
 /// @nodoc
-abstract class _$$AlertImplCopyWith<$Res> implements $AlertCopyWith<$Res> {
-  factory _$$AlertImplCopyWith(
-          _$AlertImpl value, $Res Function(_$AlertImpl) then) =
-      __$$AlertImplCopyWithImpl<$Res>;
+abstract class _$$AlertModelImplCopyWith<$Res>
+    implements $AlertModelCopyWith<$Res> {
+  factory _$$AlertModelImplCopyWith(
+          _$AlertModelImpl value, $Res Function(_$AlertModelImpl) then) =
+      __$$AlertModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String message, bool resubmitLink});
 }
 
 /// @nodoc
-class __$$AlertImplCopyWithImpl<$Res>
-    extends _$AlertCopyWithImpl<$Res, _$AlertImpl>
-    implements _$$AlertImplCopyWith<$Res> {
-  __$$AlertImplCopyWithImpl(
-      _$AlertImpl _value, $Res Function(_$AlertImpl) _then)
+class __$$AlertModelImplCopyWithImpl<$Res>
+    extends _$AlertModelCopyWithImpl<$Res, _$AlertModelImpl>
+    implements _$$AlertModelImplCopyWith<$Res> {
+  __$$AlertModelImplCopyWithImpl(
+      _$AlertModelImpl _value, $Res Function(_$AlertModelImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Alert
+  /// Create a copy of AlertModel
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -283,7 +291,7 @@ class __$$AlertImplCopyWithImpl<$Res>
     Object? message = null,
     Object? resubmitLink = null,
   }) {
-    return _then(_$AlertImpl(
+    return _then(_$AlertModelImpl(
       message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
@@ -298,11 +306,11 @@ class __$$AlertImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$AlertImpl implements _Alert {
-  const _$AlertImpl({required this.message, required this.resubmitLink});
+class _$AlertModelImpl implements _AlertModel {
+  const _$AlertModelImpl({required this.message, required this.resubmitLink});
 
-  factory _$AlertImpl.fromJson(Map<String, dynamic> json) =>
-      _$$AlertImplFromJson(json);
+  factory _$AlertModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AlertModelImplFromJson(json);
 
   @override
   final String message;
@@ -311,14 +319,14 @@ class _$AlertImpl implements _Alert {
 
   @override
   String toString() {
-    return 'Alert(message: $message, resubmitLink: $resubmitLink)';
+    return 'AlertModel(message: $message, resubmitLink: $resubmitLink)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AlertImpl &&
+            other is _$AlertModelImpl &&
             (identical(other.message, message) || other.message == message) &&
             (identical(other.resubmitLink, resubmitLink) ||
                 other.resubmitLink == resubmitLink));
@@ -328,81 +336,83 @@ class _$AlertImpl implements _Alert {
   @override
   int get hashCode => Object.hash(runtimeType, message, resubmitLink);
 
-  /// Create a copy of Alert
+  /// Create a copy of AlertModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$AlertImplCopyWith<_$AlertImpl> get copyWith =>
-      __$$AlertImplCopyWithImpl<_$AlertImpl>(this, _$identity);
+  _$$AlertModelImplCopyWith<_$AlertModelImpl> get copyWith =>
+      __$$AlertModelImplCopyWithImpl<_$AlertModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AlertImplToJson(
+    return _$$AlertModelImplToJson(
       this,
     );
   }
 }
 
-abstract class _Alert implements Alert {
-  const factory _Alert(
+abstract class _AlertModel implements AlertModel {
+  const factory _AlertModel(
       {required final String message,
-      required final bool resubmitLink}) = _$AlertImpl;
+      required final bool resubmitLink}) = _$AlertModelImpl;
 
-  factory _Alert.fromJson(Map<String, dynamic> json) = _$AlertImpl.fromJson;
+  factory _AlertModel.fromJson(Map<String, dynamic> json) =
+      _$AlertModelImpl.fromJson;
 
   @override
   String get message;
   @override
   bool get resubmitLink;
 
-  /// Create a copy of Alert
+  /// Create a copy of AlertModel
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AlertImplCopyWith<_$AlertImpl> get copyWith =>
+  _$$AlertModelImplCopyWith<_$AlertModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-Dynamics _$DynamicsFromJson(Map<String, dynamic> json) {
-  return _Dynamics.fromJson(json);
+DynamicModel _$DynamicModelFromJson(Map<String, dynamic> json) {
+  return _DynamicModel.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Dynamics {
+mixin _$DynamicModel {
   String get date => throw _privateConstructorUsedError;
   String get lab => throw _privateConstructorUsedError;
   double get value => throw _privateConstructorUsedError;
 
-  /// Serializes this Dynamics to a JSON map.
+  /// Serializes this DynamicModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of Dynamics
+  /// Create a copy of DynamicModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $DynamicsCopyWith<Dynamics> get copyWith =>
+  $DynamicModelCopyWith<DynamicModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DynamicsCopyWith<$Res> {
-  factory $DynamicsCopyWith(Dynamics value, $Res Function(Dynamics) then) =
-      _$DynamicsCopyWithImpl<$Res, Dynamics>;
+abstract class $DynamicModelCopyWith<$Res> {
+  factory $DynamicModelCopyWith(
+          DynamicModel value, $Res Function(DynamicModel) then) =
+      _$DynamicModelCopyWithImpl<$Res, DynamicModel>;
   @useResult
   $Res call({String date, String lab, double value});
 }
 
 /// @nodoc
-class _$DynamicsCopyWithImpl<$Res, $Val extends Dynamics>
-    implements $DynamicsCopyWith<$Res> {
-  _$DynamicsCopyWithImpl(this._value, this._then);
+class _$DynamicModelCopyWithImpl<$Res, $Val extends DynamicModel>
+    implements $DynamicModelCopyWith<$Res> {
+  _$DynamicModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Dynamics
+  /// Create a copy of DynamicModel
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -429,25 +439,25 @@ class _$DynamicsCopyWithImpl<$Res, $Val extends Dynamics>
 }
 
 /// @nodoc
-abstract class _$$DynamicsImplCopyWith<$Res>
-    implements $DynamicsCopyWith<$Res> {
-  factory _$$DynamicsImplCopyWith(
-          _$DynamicsImpl value, $Res Function(_$DynamicsImpl) then) =
-      __$$DynamicsImplCopyWithImpl<$Res>;
+abstract class _$$DynamicModelImplCopyWith<$Res>
+    implements $DynamicModelCopyWith<$Res> {
+  factory _$$DynamicModelImplCopyWith(
+          _$DynamicModelImpl value, $Res Function(_$DynamicModelImpl) then) =
+      __$$DynamicModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String date, String lab, double value});
 }
 
 /// @nodoc
-class __$$DynamicsImplCopyWithImpl<$Res>
-    extends _$DynamicsCopyWithImpl<$Res, _$DynamicsImpl>
-    implements _$$DynamicsImplCopyWith<$Res> {
-  __$$DynamicsImplCopyWithImpl(
-      _$DynamicsImpl _value, $Res Function(_$DynamicsImpl) _then)
+class __$$DynamicModelImplCopyWithImpl<$Res>
+    extends _$DynamicModelCopyWithImpl<$Res, _$DynamicModelImpl>
+    implements _$$DynamicModelImplCopyWith<$Res> {
+  __$$DynamicModelImplCopyWithImpl(
+      _$DynamicModelImpl _value, $Res Function(_$DynamicModelImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Dynamics
+  /// Create a copy of DynamicModel
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -456,7 +466,7 @@ class __$$DynamicsImplCopyWithImpl<$Res>
     Object? lab = null,
     Object? value = null,
   }) {
-    return _then(_$DynamicsImpl(
+    return _then(_$DynamicModelImpl(
       date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -475,12 +485,12 @@ class __$$DynamicsImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$DynamicsImpl implements _Dynamics {
-  const _$DynamicsImpl(
+class _$DynamicModelImpl implements _DynamicModel {
+  const _$DynamicModelImpl(
       {required this.date, required this.lab, required this.value});
 
-  factory _$DynamicsImpl.fromJson(Map<String, dynamic> json) =>
-      _$$DynamicsImplFromJson(json);
+  factory _$DynamicModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DynamicModelImplFromJson(json);
 
   @override
   final String date;
@@ -491,14 +501,14 @@ class _$DynamicsImpl implements _Dynamics {
 
   @override
   String toString() {
-    return 'Dynamics(date: $date, lab: $lab, value: $value)';
+    return 'DynamicModel(date: $date, lab: $lab, value: $value)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DynamicsImpl &&
+            other is _$DynamicModelImpl &&
             (identical(other.date, date) || other.date == date) &&
             (identical(other.lab, lab) || other.lab == lab) &&
             (identical(other.value, value) || other.value == value));
@@ -508,30 +518,30 @@ class _$DynamicsImpl implements _Dynamics {
   @override
   int get hashCode => Object.hash(runtimeType, date, lab, value);
 
-  /// Create a copy of Dynamics
+  /// Create a copy of DynamicModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$DynamicsImplCopyWith<_$DynamicsImpl> get copyWith =>
-      __$$DynamicsImplCopyWithImpl<_$DynamicsImpl>(this, _$identity);
+  _$$DynamicModelImplCopyWith<_$DynamicModelImpl> get copyWith =>
+      __$$DynamicModelImplCopyWithImpl<_$DynamicModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DynamicsImplToJson(
+    return _$$DynamicModelImplToJson(
       this,
     );
   }
 }
 
-abstract class _Dynamics implements Dynamics {
-  const factory _Dynamics(
+abstract class _DynamicModel implements DynamicModel {
+  const factory _DynamicModel(
       {required final String date,
       required final String lab,
-      required final double value}) = _$DynamicsImpl;
+      required final double value}) = _$DynamicModelImpl;
 
-  factory _Dynamics.fromJson(Map<String, dynamic> json) =
-      _$DynamicsImpl.fromJson;
+  factory _DynamicModel.fromJson(Map<String, dynamic> json) =
+      _$DynamicModelImpl.fromJson;
 
   @override
   String get date;
@@ -540,10 +550,10 @@ abstract class _Dynamics implements Dynamics {
   @override
   double get value;
 
-  /// Create a copy of Dynamics
+  /// Create a copy of DynamicModel
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$DynamicsImplCopyWith<_$DynamicsImpl> get copyWith =>
+  _$$DynamicModelImplCopyWith<_$DynamicModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

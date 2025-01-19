@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'app.dart';
+import 'core/di/injectable.dart';
 
-void main() {
+Future<void> main() async {
+  configureDependencies();
   runApp(const YourHealthApp());
 }

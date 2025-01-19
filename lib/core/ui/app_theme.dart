@@ -38,4 +38,9 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.grey,
   );
+  static final TextStyle alertMessage = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.grey,
+  );
 }

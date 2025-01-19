@@ -3,5 +3,6 @@
     "pageSubTitle": "All Period",
     "columnNameDate": "Дата",
     "columnNameValue": "МЕ/мл",
-    "resubmitMarkersButton": "Resubmit the markers"
+    "resubmitMarkersButton": "Resubmit the markers",
+    "retryButton": "Retry"
 }

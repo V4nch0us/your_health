@@ -1,12 +1,13 @@
 # YourHealth
 ## Test task for health tracking app
 
-![Layout demo](layout_demo.png)
-
-Build command: flutter pub run build_runner build --delete-conflicting-outputs
-
-Stack: 
+<div style="display: flex; align-items: center; gap: 10px;">
+  <img src="layout_demo.png" alt="Layout demo" style="width: 150px; height: auto;">
+  <p>Stack: 
 Network - Retrofit,
 DI - Injectable,
 Chart - fl_chart,
-State Management - BLoC,
+State Management - BLoC,</p>
+</div>
+
+Build command: flutter pub run build_runner build --delete-conflicting-outputs
